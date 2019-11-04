@@ -16,6 +16,7 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
     return MaterialApp(
       routes: routes,
       home: Home(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

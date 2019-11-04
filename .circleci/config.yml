@@ -1,0 +1,15 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: cirrusci/flutter
+
+    branches:
+      only: master
+
+    steps:
+      - checkout
+
+      - run:
+          name: Check convension
+          command: flutter analyze
