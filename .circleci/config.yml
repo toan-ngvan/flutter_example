@@ -8,5 +8,9 @@ jobs:
       - checkout
 
       - run:
+          name: Install danger
+          command: sudo gem install danger-flutter_lint
+
+      - run:
           name: Check convension
-          command: flutter analyze
+          command: flutter analyze > flutter_analyze_report.txt
