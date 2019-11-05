@@ -2,14 +2,14 @@ version: 2
 jobs:
   build:
     docker:
-      - image: cirrusci/flutter
+      - image: cirrusci/flutter:v1.9.1-hotfix.6
 
     steps:
       - checkout
 
       - run:
           name: Install danger
-          command: sudo gem install danger-flutter_lint
+          command: sudo gem install danger-flutter_lint && sudo gem install danger && danger
 
       - run:
           name: Check convension
