@@ -8,12 +8,16 @@ jobs:
       - checkout
 
       - run:
+          name: Run Flutter doctor
+          command: flutter doctor
+
+      - run:
           name: Install danger
           command: sudo gem install danger-flutter_lint
 
       - run:
           name: Check convention
-          command: flutter analyze > flutter_analyze_report.txt
+          command: set +e && dartanalyzer lib > flutter_analyze_report.txt
 
       - run:
           name: Run danger
