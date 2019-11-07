@@ -7,9 +7,13 @@ jobs:
     steps:
       - checkout
 
-      - run:
-          name: Run Flutter doctor
-          command: flutter doctor
+      # - run:
+      #     name: Run Flutter doctor
+      #     command: flutter doctor
+
+      # - run:
+      #     name: Get packages
+      #     command: flutter packages get
 
       - run:
           name: Install danger
@@ -17,8 +21,8 @@ jobs:
 
       - run:
           name: Check convention
-          command: set +e && dartanalyzer lib > flutter_analyze_report.txt
+          command: sh test_bash_ci.sh
 
       - run:
           name: Run danger
-          command: danger
+          command: danger --fail-on-errors=true
