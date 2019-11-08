@@ -7,8 +7,8 @@ class ListviewControllerExample extends StatefulWidget {
 }
 
 class _ListviewControllerExampleState extends State<ListviewControllerExample> {
-  ScrollController _scrollController =
-      ScrollController(initialScrollOffset: 500);
+  // ScrollController _scrollController =
+  //     ScrollController(initialScrollOffset: 500);
 
   @override
   void initState() {

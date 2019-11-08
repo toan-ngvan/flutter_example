@@ -14,7 +14,7 @@ class _DrawCanvasExampleState extends State<DrawCanvasExample> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: new Stack(
+      body: Stack(
         children: [
           _buildContent(),
           CurvedShape(),
@@ -24,11 +24,11 @@ class _DrawCanvasExampleState extends State<DrawCanvasExample> {
               height: AVATAR_DIAMETER,
               padding: EdgeInsets.all(8),
               child: Container(
-                decoration: new BoxDecoration(
+                decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   color: Colors.deepOrangeAccent[400],
                 ),
-                child: new Icon(
+                child: Icon(
                   Icons.mood,
                   color: Colors.deepOrangeAccent[100],
                   size: AVATAR_RADIUS,
@@ -70,7 +70,7 @@ class CurvedShape extends StatelessWidget {
 class _MyPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
-    Paint paint = new Paint()
+    Paint paint = Paint()
       ..style = PaintingStyle.fill
       ..isAntiAlias = true
       ..color = Colors.purple[700];

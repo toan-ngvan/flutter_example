@@ -21,8 +21,8 @@ jobs:
 
       - run:
           name: Check convention
-          command: sh test_bash_ci.sh
+          command: sh ci_check_convention.sh
 
       - run:
           name: Run danger
-          command: danger --fail-on-errors=true
+          command: danger

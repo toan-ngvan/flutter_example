@@ -43,10 +43,11 @@ class _SlideTrasitionExampleState extends State<SlideTrasitionExample>
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          if (_isForward)
+          if (_isForward) {
             controller.reverse();
-          else
+          } else {
             controller.forward();
+          }
           _isForward = !_isForward;
         },
         child: Icon(Icons.add),

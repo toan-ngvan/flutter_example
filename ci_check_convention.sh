@@ -2,4 +2,4 @@
 
 flutter analyze > flutter_analyze_report.txt
 
-echo 'test'
+echo 'Check completed'
