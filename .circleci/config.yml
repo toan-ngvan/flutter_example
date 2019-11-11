@@ -7,13 +7,9 @@ jobs:
     steps:
       - checkout
 
-      # - run:
-      #     name: Run Flutter doctor
-      #     command: flutter doctor
-
-      # - run:
-      #     name: Get packages
-      #     command: flutter packages get
+      - run:
+          name: Get packages
+          command: flutter packages get
 
       - run:
           name: Install danger
