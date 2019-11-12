@@ -28,6 +28,12 @@ class Home extends StatelessWidget {
                 Navigator.of(context).pushNamed('canvas-example');
               },
               child: Text('Canvas'),
+            ),
+            RaisedButton(
+              onPressed: () {
+                Navigator.of(context).pushNamed('step-by-step');
+              },
+              child: Text('Step by step'),
             )
           ],
         ),

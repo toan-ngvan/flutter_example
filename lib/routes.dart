@@ -8,6 +8,8 @@ import 'package:flutter_example/pages/listViews/listviewControllerExample.dart';
 // Canvas
 import 'package:flutter_example/pages/canvasExample.dart';
 import 'package:flutter_example/pages/canvas/drawCanvas.dart';
+// Step by step
+import 'package:flutter_example/pages/stepByStepExample.dart';
 
 Map<String, WidgetBuilder> routes = {
   'animations-example': (context) => AnimationsExample(),
@@ -16,4 +18,5 @@ Map<String, WidgetBuilder> routes = {
   'listview-controller-example': (context) => ListviewControllerExample(),
   'canvas-example': (context) => CanvasExample(),
   'draw-canvas-example': (context) => DrawCanvasExample(),
+  'step-by-step': (context) => StepByStepExample(),
 };
