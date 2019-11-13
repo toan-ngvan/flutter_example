@@ -17,8 +17,9 @@ jobs:
 
       - run:
           name: Check convention
-          command: sh ci_check_convention.sh
+          command: flutter analyze > flutter_analyze_report.txt
 
       - run:
           name: Run danger
+          when: always
           command: danger
