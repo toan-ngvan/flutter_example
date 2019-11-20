@@ -34,6 +34,12 @@ class Home extends StatelessWidget {
                 Navigator.of(context).pushNamed('step-by-step');
               },
               child: Text('Step by step'),
+            ),
+            RaisedButton(
+              onPressed: () {
+                Navigator.of(context).pushNamed('image-picker');
+              },
+              child: Text('Image picker'),
             )
           ],
         ),
